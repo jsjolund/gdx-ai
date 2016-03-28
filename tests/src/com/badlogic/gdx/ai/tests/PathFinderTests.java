@@ -25,6 +25,7 @@ import com.badlogic.gdx.ai.tests.pfa.tests.FlatTiledAStarTest;
 import com.badlogic.gdx.ai.tests.pfa.tests.HierarchicalTiledAStarTest;
 import com.badlogic.gdx.ai.tests.pfa.tests.InterruptibleFlatTiledAStarTest;
 import com.badlogic.gdx.ai.tests.pfa.tests.InterruptibleHierarchicalTiledAStarTest;
+import com.badlogic.gdx.ai.tests.pfa.tests.NavMeshTest;
 import com.badlogic.gdx.ai.tests.utils.GdxAiTestUtils;
 import com.badlogic.gdx.ai.tests.utils.scene2d.CollapsableWindow;
 import com.badlogic.gdx.ai.tests.utils.scene2d.FpsLabel;
@@ -57,7 +58,8 @@ public class PathFinderTests extends ApplicationAdapter {
 		new FlatTiledAStarTest(this),
 		new HierarchicalTiledAStarTest(this),
 		new InterruptibleFlatTiledAStarTest(this),
-		new InterruptibleHierarchicalTiledAStarTest(this)
+		new InterruptibleHierarchicalTiledAStarTest(this),
+		new NavMeshTest(this),
 	};
 	// @on - enable libgdx formatter
 
