@@ -141,6 +141,7 @@ public class InterruptibleHierarchicalTiledAStarTest extends PathFinderTestBase 
 		scheduler.add(pathFinderQueue, 1, 0);
 
 		renderer = new ShapeRenderer();
+		renderer.setProjectionMatrix(getCamera().combined);
 		inputProcessor = new TiledHierarchicalAStarInputProcessor(this);
 
 		Table detailTable = new Table(container.skin);

@@ -106,6 +106,7 @@ public class HierarchicalTiledAStarTest extends PathFinderTestBase {
 			worldMap));
 
 		renderer = new ShapeRenderer();
+		renderer.setProjectionMatrix(getCamera().combined);
 		inputProcessor = new TiledHierarchicalAStarInputProcessor(this);
 
 		Table detailTable = new Table(container.skin);

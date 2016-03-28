@@ -96,6 +96,7 @@ public class FlatTiledAStarTest extends PathFinderTestBase {
 		pathSmoother = new PathSmoother<FlatTiledNode, Vector2>(new TiledRaycastCollisionDetector<FlatTiledNode>(worldMap));
 
 		renderer = new ShapeRenderer();
+		renderer.setProjectionMatrix(getCamera().combined);
 		inputProcessor = new TiledAStarInputProcessor(this);
 
 		Table detailTable = new Table(container.skin);

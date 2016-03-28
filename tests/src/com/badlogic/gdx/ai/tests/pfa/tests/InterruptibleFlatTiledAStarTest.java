@@ -130,6 +130,7 @@ public class InterruptibleFlatTiledAStarTest extends PathFinderTestBase implemen
 		scheduler.add(pathFinderQueue, 1, 0);
 
 		renderer = new ShapeRenderer();
+		renderer.setProjectionMatrix(getCamera().combined);
 		inputProcessor = new TiledAStarInputProcessor(this);
 
 		Table detailTable = new Table(container.skin);
